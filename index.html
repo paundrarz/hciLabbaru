@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg">
+        <div class="container">
+            <h2>Create Account</h2>
+            <form id="register-form">
+                <div class="input-box">
+                    <input type="text" id="FirstName" name="FirstName" class="input-field" autocomplete="off" required>
+                    <label class="title" for="FirstName">First Name</label>
+                </div>
+                
+                <div class="input-box">
+                    <input type="text" id="LastName" name="LastName" class="input-field" autocomplete="off" required>
+                    <label class="title" for="LastName">Last Name</label>
+                </div>
+
+                <div class="input-box">
+                    <select id="gender" name="gender" class="input-field select-gender" type="gender" >
+                        <option value="male" >Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="input-box">
+                    <input type="text" id="email" name="email" class="input-field" autocomplete="off" required>
+                    <label class="title" for="email">Email aktif</label>
+                </div>
+
+                <div class="input-box">
+                    <input type="password" id="password" name="password" class="input-field" autocomplete="off" required>
+                    <label class="title" for="password">Password</label>
+                </div>
+
+                <div class="error">
+                    <label id="error-txt"></label>
+                </div>
+                
+                <button type="submit">Register</button>
+                <p class="p-login">Already have account? <a href="#">Login</a></p>
+                <img src="asset/or.png" alt="" class="img-or">
+                <div class="container-sign">
+                    <div class="kiri">
+                        <img src="asset/fb.png" alt="" class="sign">
+                        <p class="p-sign">Register with facebook</p>
+                    </div>
+                    <div class="kanan">
+                        <img src="asset/Vector.png" alt="" class="sign">
+                        <p class="p-sign">Register with facebook</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

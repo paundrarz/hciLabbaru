@@ -1,0 +1,281 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background: url('./asset/1440 (1) 2.png') no-repeat ;
+    background-size: cover;
+    background-color: #f4f4f4;
+}
+
+.bg {
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {    
+    width: 400px;
+    margin: 50px auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    outline: 3px solid #C69956;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+}
+
+form {
+    display: grid;
+    grid-gap: 5px;
+}
+
+label.title {
+    font-weight: bold;
+}
+
+.error {
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: red;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select[type="gender"],
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+select[type="gender"]{
+    width:385px;
+}
+
+button {
+    width: auto;
+    padding: 10px;
+    background-color: #0A5CAE;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #015ebb;
+}
+
+.input-box label {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -380px;
+    color: rgba(0, 0, 0, 0.5);
+    transition: .15s ease-in-out;
+    font-size: 14px;
+}
+
+.input-box input {
+    width: 90%;
+    height: 20px;
+}
+
+.input-box .input-field {
+    font-size: 1em;
+    color: #333;
+    padding-left: 15px;
+    margin-bottom: 25px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: none;
+}
+
+.input-box input[type="password"] {
+    margin-bottom: 10px;
+}
+
+.input-box .input-field:focus {
+    border: 2px solid #C69956;
+}
+
+.input-field:valid ~ label,
+.input-field:focus ~ label {
+    margin-top: -7px;
+    font-size: 12px;
+    color: #C69956;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 0 5px;
+}
+
+.input-field:valid ~ label {
+    color: #C69956;
+}
+
+.p-login{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+.img-or{
+    width: 100%;
+}
+
+.container-sign{
+    gap: 20px;
+    width: 100%;
+    display: flex;
+}
+
+.kiri,.kanan{
+    max-height: 7vh;
+    flex-grow: 1;
+    /* width: 50%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: solid grey;
+    border-radius: 8px;
+    padding: 2px;
+}
+
+.p-sign{
+    color: white;
+    font-size: 10px;
+}
+
+.sign{
+    width: 15%;
+}
+
+.kiri:hover,.kanan:hover{
+    transition: .4s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.input-box .select-gender{
+    /* border: solid red; */
+    padding-left:1%;
+    /* margin-left: 1%; */
+    height:5.4vh ;
+    font-weight:bold;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (min-height: 896px){
+    body{
+        background: url(asset/bg\ hp.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .bg{
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .container{
+        position: relative;
+        top: 100px;
+        width: 60%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .input-box label {
+        /* background-color: red; */
+        position: absolute;
+        /* margin-top: 10px; */
+        right: 298px;
+        color: rgba(0, 0, 0, 0.5);
+        transition: .15s ease-in-out;
+        font-size: 10px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select[type="gender"],
+    select {
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+    .input-field:valid ~ label,
+    .input-field:focus ~ label {
+        margin-top: -1px;
+        margin-left: 20px;
+        left: 10px;
+        font-size: 7px;
+        color: #C69956;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 0 5px;
+        transition: .3s ease-in-out;
+    }
+
+    .input-box .input-field {
+        width: 95%;
+        font-size: 10px;
+        color: #333;
+        padding-left: 2px;
+        margin-bottom: 25px;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        outline: none;
+    }
+
+    .input-box .select-gender{
+        width: 98%;
+        /* border: solid red; */
+        padding-left:1%;
+        /* margin-left: 1%; */
+        height:3.7vh; 
+        font-size: 10px;
+        font-weight:bold;
+        color: rgba(0, 0, 0, 0.5);
+    }
+    .p-login{
+        font-size: 10px;
+    }
+    button{
+        position: relative;
+        top: -15px;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 414px) and (orientation: landscape){
+    .input-box .select-gender{
+        width: 96.5%;
+        /* border: solid red; */
+        padding-left:1%;
+        /* margin-left: 1%; */
+        height:7.5vh; 
+        /* font-size: 100px; */
+        font-weight:bold;
+        color: rgba(0, 0, 0, 0.5);
+    }
+}
